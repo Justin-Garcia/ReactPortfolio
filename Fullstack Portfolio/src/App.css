@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --main-text-color: hsl(356, 83%, 41%);
+  --accent-text-color: hsl(0, 100%, 24%);
+  --main-border-color: hsl(201, 100%, 14%);
+  --accent-border-color: hsl(203, 39%, 57%);
+  --main-bg-color: hsl(40, 91%, 91%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+/*////////////// Navigation Bar Styling //////////////*/
+.Nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+  text-align: center;
+  border-bottom: 3px solid var(--main-border-color);
+  background-color: white;
+}
+
+.Nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: "Anton", serif;
+  padding-top: 10px;
+  padding-inline: 5%;
+  border-inline: 2px solid var(--accent-text-color);
+}
+
+.Nav > a:active {
+  color: var(--main-text-color);
+}
+
+/*////////////// Home Page Styling //////////////*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  margin: 0;
+  height: 80vh;
+}
+
+.intro > h1 {
+  font-size: 10rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.idContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -10vh;
+}
+
+.id {
+  color: white;
+  font-size: clamp(1rem, 5vw, 2rem);
+  position: relative;
+  background-color: orange;
+  padding: 5px;
+  border-right: 2px solid var(--accent-text-color);
+  border-bottom: 2px solid var(--accent-text-color);
+  box-shadow: 5px 5px 1px var(--accent-text-color);
+  width: 45%;
+  text-align: center;
+  font-family: "Anton", serif;
+}
+
+/*////////////// About Page Styling //////////////*/
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  background: orange;
+  margin: 0;
+  margin-inline: 5%;
+  width: 45%;
+  padding: 10px;
+  border: 2px solid var(--accent-text-color);
+  box-shadow: 5px 5px 2px var(--accent-text-color);
+  color: white;
+}
+
+/*////////////// Footer Styling //////////////*/
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 2rem;
+  height: 10vh;
+}
+
+#logo {
+  height: 10vh;
+}
